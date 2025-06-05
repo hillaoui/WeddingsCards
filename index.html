@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartes Précieuses - Cartes d'Événements Personnalisées</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>✨ Cartes Précieuses</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#accueil" class="nav-link">Accueil</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#galerie" class="nav-link">Galerie</a>
+                    <a href="#commande" class="nav-link">Commander</a>
+                </nav>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Créez des Moments Inoubliables</h1>
+                <p class="hero-description">
+                    Spécialiste en cartes d'événements personnalisées au Maroc.
+                    Transformez vos occasions spéciales en souvenirs uniques avec nos designs sur mesure.
+                </p>
+                <a href="#galerie" class="btn btn-primary">Découvrir nos Modèles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💍</div>
+                    <h3>Cartes de Mariage</h3>
+                    <p>Faire-part élégants pour votre jour J</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎂</div>
+                    <h3>Cartes d'Anniversaire</h3>
+                    <p>Invitations festives personnalisées</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👶</div>
+                    <h3>Faire-part de Naissance</h3>
+                    <p>Annoncez l'arrivée de bébé</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✝️</div>
+                    <h3>Invitations de Baptême</h3>
+                    <p>Cartes pour cette occasion sacrée</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🕊️</div>
+                    <h3>Cartes de Communion</h3>
+                    <p>Célébrez ce moment important</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎊</div>
+                    <h3>Autres Événements</h3>
+                    <p>Événements d'entreprise, diplômes...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title">Pourquoi Nous Choisir ?</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">🎨</div>
+                    <h3>Designs Personnalisés</h3>
+                    <p>Chaque carte est unique selon vos goûts</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">⭐</div>
+                    <h3>Qualité Premium</h3>
+                    <p>Papiers et impressions de haute qualité</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">🚚</div>
+                    <h3>Livraison Rapide</h3>
+                    <p>Production et livraison dans les délais</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">💬</div>
+                    <h3>Conseils Expert</h3>
+                    <p>Accompagnement personnalisé</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galerie" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Notre Galerie</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="mariage">Mariage</button>
+                <button class="filter-btn" data-filter="anniversaire">Anniversaire</button>
+                <button class="filter-btn" data-filter="naissance">Naissance</button>
+                <button class="filter-btn" data-filter="bapteme">Baptême</button>
+                <button class="filter-btn" data-filter="communion">Communion</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="mariage">
+                    <div class="gallery-card">
+                        <div class="card-image">
+                            <div class="placeholder-image mariage-bg">Élégance Dorée</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Élégance Dorée</h3>
+                            <p>Design luxueux avec dorures</p>
+                            <button class="btn btn-secondary"
+                                onclick="selectTemplate('Élégance Dorée', 'mariage')">Choisir ce modèle</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="mariage">
+                    <div class="gallery-card">
+                        <div class="card-image">
+                            <div class="placeholder-image mariage-bg">Romance Florale</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Romance Florale</h3>
+                            <p>Motifs floraux délicats</p>
+                            <button class="btn btn-secondary"
+                                onclick="selectTemplate('Romance Florale', 'mariage')">Choisir ce modèle</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="anniversaire">
+                    <div class="gallery-card">
+                        <div class="card-image">
+                            <div class="placeholder-image anniversaire-bg">Fête Colorée</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Fête Colorée</h3>
+                            <p>Design festif et joyeux</p>
+                            <button class="btn btn-secondary"
+                                onclick="selectTemplate('Fête Colorée', 'anniversaire')">Choisir ce modèle</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="naissance">
+                    <div class="gallery-card">
+                        <div class="card-image">
+                            <div class="placeholder-image naissance-bg">Douceur Pastel</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Douceur Pastel</h3>
+                            <p>Couleurs tendres pour bébé</p>
+                            <button class="btn btn-secondary"
+                                onclick="selectTemplate('Douceur Pastel', 'naissance')">Choisir ce modèle</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bapteme">
+                    <div class="gallery-card">
+                        <div class="card-image">
+                            <div class="placeholder-image bapteme-bg">Tradition Sacrée</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Tradition Sacrée</h3>
+                            <p>Design religieux classique</p>
+                            <button class="btn btn-secondary"
+                                onclick="selectTemplate('Tradition Sacrée', 'bapteme')">Choisir ce modèle</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="communion">
+                    <div class="gallery-card">
+                        <div class="card-image">
+                            <div class="placeholder-image communion-bg">Pureté Blanche</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Pureté Blanche</h3>
+                            <p>Simplicité et élégance</p>
+                            <button class="btn btn-secondary"
+                                onclick="selectTemplate('Pureté Blanche', 'communion')">Choisir ce modèle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="commande" class="order-form">
+        <div class="container">
+            <h2 class="section-title">Passer une Commande</h2>
+            <form id="orderForm" class="form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="firstName">Prénom *</label>
+                        <input type="text" id="firstName" name="firstName" autocomplete="on" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Nom *</label>
+                        <input type="text" id="lastName" name="lastName" autocomplete="on" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" autocomplete="on" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone *</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="on" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventType">Type d'événement *</label>
+                        <select id="eventType" name="eventType" required>
+                            <option value="">Sélectionnez un type</option>
+                            <option value="mariage">Mariage</option>
+                            <option value="anniversaire">Anniversaire</option>
+                            <option value="naissance">Naissance</option>
+                            <option value="bapteme">Baptême</option>
+                            <option value="communion">Communion</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="selectedTemplate">Modèle choisi</label>
+                        <input type="text" id="selectedTemplate" name="selectedTemplate" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantité *</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="50" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="deadline">Date limite souhaitée</label>
+                        <input type="date" id="deadline" name="deadline">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="customText">Texte personnalisé pour la carte *</label>
+                    <textarea id="customText" name="customText" rows="4"
+                        placeholder="Saisissez le texte qui apparaîtra sur votre carte..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="colors">Couleurs préférées</label>
+                    <input type="text" id="colors" name="colors" placeholder="Ex: Rose et doré, Bleu et blanc...">
+                </div>
+
+                <div class="form-group">
+                    <label for="format">Format souhaité</label>
+                    <select id="format" name="format">
+                        <option value="">Sélectionnez un format</option>
+                        <option value="simple">Carte simple</option>
+                        <option value="pliee">Carte pliée</option>
+                        <option value="triptyque">Triptyque</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Commentaires supplémentaires</label>
+                    <textarea id="comments" name="comments" rows="3"
+                        placeholder="Toute information supplémentaire..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    Commander via WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>✨ Cartes Précieuses</h3>
+                    <p>Spécialiste en cartes d'événements personnalisées au Maroc</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +212 6 06 57 22 98</p>
+                    <p><i class="fas fa-envelope"></i> contact@cartesprecieuses.ma</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Casablanca, Maroc</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Cartes de mariage</li>
+                        <li>Faire-part de naissance</li>
+                        <li>Invitations d'anniversaire</li>
+                        <li>Cartes de baptême</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cartes Précieuses. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/212600000000?text=Bonjour,%20je%20souhaite%20obtenir%20plus%20d'informations%20sur%20vos%20cartes%20personnalisées."
+        class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
